@@ -1,5 +1,7 @@
-body {
-  background-color: #e4e4e4;
+*,body {
+  font-family:  monospace;
+  color: #239ee2;
+  box-sizing:border-box;
 }
 
 h1 {
@@ -8,38 +10,59 @@ h1 {
 
 #notes {
   margin: 0 auto;
-  width: 75%;
+  width: 90%;
 }
 
 .note {
-  background-color: #fdffb7;
-  border: 8px solid #d4daa7;
-  border-radius: 8px;
-  padding: 10px;
+  background-color: #ffffff;
+  border: 2px solid #cbe9f9;
+  padding: 15px;
 }
 
 form {
-  text-align: center;
-}
-
-input {
-  width: 50%;
+  position:relative;
+  width: 90%;
+  margin:0 auto;
+  padding: 10px 0 50px;
 }
 
 input,
 button {
-  padding: 10px;
+  padding: 15px 0;
+  border: 2px solid;
+  border-radius: 0;
+  line-height: 5px;
+  height:48px;
+}
+
+input {
+  width: 90%;
+  margin: 0;
+  float:left;
+  border-right: 0 solid;
+  font-size:15px;
+  padding-left: 15px;
 }
 
 button {
-  background-color: #ff9494;
-  border: none;
-  border-radius: 5px;
+  font-family:helvetica;
+  font-size: 30px;
+  color: #239ee2;
+  background-color: #cbe9f9;
+  margin:0;
+  border-left: 0px solid;
+  float:left;
+  width:10%;
+  padding-right: 1px;
+
 }
 
 button:hover {
   cursor: pointer;
-  background-color: #fe2222;
+  background-color: #239ee2;
+  border: 2px solid #239ee2;
+  border-left: 0 solid;
+  color: #fff;
 }
 
 button:focus {
