@@ -35,7 +35,9 @@ d3.select('input')
         .append('p')
           .classed('note', true)
           .classed('preview', true)
-    }		 
+    }	else if(d3.event.target.value.length === 0) {
+    	d3.select('.preview').remove();
+    } 
 
 		d3.select(".preview")
           .text(d3.event.target.value);
