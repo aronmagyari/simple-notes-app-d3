@@ -104,4 +104,9 @@ input {
 
 .lucky:hover {
   color:#fff;
-  background-color: #23e22e;}
+  background-color: #23e22e;
+}
+
+.preview {
+  background-color: #cbe9f9;
+}
