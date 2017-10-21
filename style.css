@@ -19,11 +19,15 @@ h1 {
   padding: 15px;
 }
 
+.controls {
+    position: relative;
+    padding: 10px 0 105px;
+}
+
 form {
   position:relative;
   width: 90%;
   margin:0 auto;
-  padding: 10px 0 50px;
 }
 
 input,
@@ -67,4 +71,20 @@ button:hover {
 
 button:focus {
   outline: none;
+}
+
+#remove {
+  float:right;
+  margin: 10px 5%;
+  width: fit-content;
+  font-size: 12px;
+  font-weight: 600;
+  color: #e22323;
+  padding: 10px 30px;
+  background-color:#f9cbcb;
+  border: 0 solid;
+}
+#remove:hover {
+  color:#fff;
+  background-color: #e22323;
 }

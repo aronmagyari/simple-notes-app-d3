@@ -8,3 +8,9 @@ d3.select("#new-note")
           .text(input.property('value'));
       input.property('value', '');
     });
+
+d3.select('#remove')
+		.on('click', function() {
+			console.log(d3.event);
+			var notes = d3.selectAll('.note').remove();
+		})
