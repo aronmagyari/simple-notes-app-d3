@@ -37,9 +37,11 @@ button {
   border-radius: 0;
   line-height: 5px;
   height:48px;
+  font-family:helvetica;
 }
 
 input {
+  font-family: monospace;
   width: 90%;
   margin: 0;
   float:left;
@@ -48,8 +50,7 @@ input {
   padding-left: 15px;
 }
 
-button {
-  font-family:helvetica;
+.add-btn {
   font-size: 30px;
   color: #239ee2;
   background-color: #cbe9f9;
@@ -61,7 +62,7 @@ button {
 
 }
 
-button:hover {
+.add-btn:hover {
   cursor: pointer;
   background-color: #239ee2;
   border: 2px solid #239ee2;
@@ -69,22 +70,38 @@ button:hover {
   color: #fff;
 }
 
-button:focus {
+.add-btn:focus {
   outline: none;
 }
 
-#remove {
+
+.control-btn {
   float:right;
-  margin: 10px 5%;
   width: fit-content;
   font-size: 12px;
   font-weight: 600;
-  color: #e22323;
   padding: 10px 30px;
-  background-color:#f9cbcb;
   border: 0 solid;
 }
-#remove:hover {
+
+.remove {
+  background-color:#f9cbcb;
+  color: #e22323;
+  margin: 10px 5% 0 0;
+}
+
+.remove:hover {
   color:#fff;
   background-color: #e22323;
 }
+
+.lucky {
+  background-color:#d3f9cb;
+  color: #23e22e;
+  margin: 10px;
+
+}
+
+.lucky:hover {
+  color:#fff;
+  background-color: #23e22e;}

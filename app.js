@@ -9,8 +9,16 @@ d3.select("#new-note")
       input.property('value', '');
     });
 
-d3.select('#remove')
+d3.select('.remove')
 		.on('click', function() {
-			console.log(d3.event);
-			var notes = d3.selectAll('.note').remove();
+			d3.selectAll('.note').remove();
+		})
+
+d3.select('.lucky')
+		.on('click', function() {
+			d3.selectAll('.note').each(function(d) {
+				let hue = Math.floor(Math.random()*360);
+				d3.select(this).style('border-color', `hsl(${hue},76%,89%)`)	
+				d3.select(this).style('color', `hsl(${hue},77%,51%)`)
+			})
 		})
